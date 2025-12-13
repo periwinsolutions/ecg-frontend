@@ -10,7 +10,7 @@ import Testimonials from '@/components/Home/Testimonials';
 import TicketSection from '@/components/Home/TicketSection';
 import ContactForm from '@/components/Contact/Form';
 export const metadata: Metadata = {
-  title: "Symposium",
+  title: "Elpis Community Group",
 };
 
 export default function Home() {
