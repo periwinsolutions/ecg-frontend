@@ -1,0 +1,10 @@
+
+;; CAA Records
+elpiscomm.com.	1	IN	CAA	0 issuewild "awstrust.com"
+elpiscomm.com.	1	IN	CAA	0 issuewild "amazonaws.com"
+elpiscomm.com.	1	IN	CAA	0 issue "amazonaws.com"
+elpiscomm.com.	1	IN	CAA	0 issuewild "amazon.com"
+elpiscomm.com.	1	IN	CAA	0 issuewild "amazontrust.com"
+elpiscomm.com.	1	IN	CAA	0 issue "awstrust.com"
+elpiscomm.com.	1	IN	CAA	0 issue "amazontrust.com"
+elpiscomm.com.	1	IN	CAA	0 issue "amazon.com"

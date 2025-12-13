@@ -115,7 +115,7 @@ const Footer: FC = () => {
                                         </li>
                                         <li className="text-gray-400 text-sm">
                                             <span className="block">info@elpiscomm.com</span>
-                                            <span className="block">+44 7377 552170</span>
+                                            <span className="block">+44 (0) 7396 739170</span>
                                         </li>
                                     </ul>
                                 </div>
