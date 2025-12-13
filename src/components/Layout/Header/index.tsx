@@ -119,7 +119,7 @@ const Header: React.FC = () => {
                 </div>
               )}
               <Link
-                href="#"
+                href="https://www.zeffy.com/en-GB/donation-form/donate-to-change-lives-5915"
                 className="hidden lg:block btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden"
                 onClick={() => {
                   setIsSignUpOpen(true);

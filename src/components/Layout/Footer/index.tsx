@@ -1,164 +1,199 @@
 import React, { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { headerData } from "../Header/Navigation/menuData";
 
 const Footer: FC = () => {
     return (
-        <footer className="bg-secondary">
-            <div className="container">
-                <div className="flex items-center justify-between flex-wrap md:pt-44 pt-16 md:pb-20 pb-6 border-b border-solid border-dark_border">
-                    <div>
-                        <Link href="/">
-                            <Image
-                                src="/images/footer/footer-logo-white.svg"
-                                alt="logo"
-                                width={0}
-                                height={0}
-                                quality={100}
-                                layout="responsive"
-                                sizes="100vh"
-                                className="w-full h-full"
-                            />
-                        </Link>
-                    </div>
-                    <div>
-                        <ul className="flex items-center flex-wrap md:gap-30 gap-3 md:py-0 py-5">
-                            <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
-                                <Link href="/">Home</Link>
-                            </li>
-                            <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
-                                <Link href="/">Speakers</Link>
-                            </li>
-                            <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
-                                <Link href="/">Schedule</Link>
-                            </li>
-                            <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
-                                <Link href="/">About</Link>
-                            </li>
-                            <li className="text-PaleCerulean sm:text-xl text-lg font-normal transition-all duration-0.4s hover:text-primary">
-                                <Link href="/">Sponsors</Link>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul className="flex items-center gap-5">
-                            <li>
-                                <Link href="/" className="group">
-                                    <svg
-                                        width="26"
-                                        height="27"
-                                        fill="white"
-                                        viewBox="0 0 26 27"
-                                        className="group-hover:fill-ElectricAqua"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <g clipPath="url(#clip0_7_993)">
-                                            <path d="M23.8293 1.63855H2.14412C1.40159 1.639 0.799656 2.24123 0.799805 2.98405V24.6692C0.800251 25.4118 1.40248 26.0137 2.14531 26.0135H13.8204V16.5873H10.6545V12.8977H13.8204V10.1824C13.8204 7.03366 15.7427 5.31979 18.5516 5.31979C19.8969 5.31979 21.053 5.42007 21.39 5.46485V8.75586H19.4531C17.9249 8.75586 17.629 9.48202 17.629 10.5478V12.8977H21.2829L20.8068 16.5873H17.629V26.0135H23.8293C24.5723 26.0137 25.1747 25.4116 25.1748 24.6686C25.1748 24.6685 25.1748 24.6683 25.1748 24.668V2.98286C25.1745 2.24034 24.5721 1.6384 23.8293 1.63855Z" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_7_993">
-                                                <rect
-                                                    width="26"
-                                                    height="26"
-                                                    fill="white"
-                                                    transform="translate(0 0.838745)"
-                                                />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/" className="group">
-                                    <svg
-                                        width="26"
-                                        height="27"
-                                        viewBox="0 0 26 27"
-                                        fill="#fff"
-                                        className="group-hover:fill-ElectricAqua"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <g clipPath="url(#clip0_7_995)">
-                                            <path d="M24.1249 0.838745H1.87514C0.839478 0.838745 0 1.67822 0 2.71388V24.9636C0 25.9993 0.839478 26.8387 1.87514 26.8387H24.1249C25.1605 26.8387 26 25.9993 26 24.9636V2.71388C26 1.67822 25.1605 0.838745 24.1249 0.838745V0.838745ZM18.9357 10.9748C18.9414 11.1027 18.9442 11.2312 18.9442 11.3604C18.9442 15.3033 15.9429 19.85 10.4544 19.8502H10.4546H10.4544C8.76929 19.8502 7.20122 19.3562 5.88071 18.5098C6.11418 18.5374 6.35182 18.5511 6.59244 18.5511C7.99051 18.5511 9.2771 18.0742 10.2985 17.2738C8.99225 17.2496 7.89093 16.3869 7.51086 15.2013C7.69276 15.2362 7.87982 15.2553 8.07164 15.2553C8.34399 15.2553 8.60782 15.2186 8.85855 15.1501C7.49321 14.8768 6.46469 13.6701 6.46469 12.2253C6.46469 12.2118 6.46469 12.1997 6.46509 12.1872C6.86717 12.4107 7.32698 12.5452 7.81654 12.5603C7.01535 12.0257 6.48869 11.1118 6.48869 10.0766C6.48869 9.52988 6.63647 9.0177 6.89276 8.57674C8.36423 10.3822 10.5633 11.5697 13.0432 11.6944C12.9921 11.4758 12.9657 11.2481 12.9657 11.014C12.9657 9.36682 14.3021 8.03044 15.9499 8.03044C16.8082 8.03044 17.5834 8.39325 18.1279 8.97327C18.8077 8.83917 19.446 8.59082 20.0227 8.24904C19.7995 8.9455 19.3266 9.52988 18.7105 9.89943C19.3141 9.82722 19.8894 9.66714 20.424 9.4295C20.0247 10.028 19.5182 10.5536 18.9357 10.9748Z" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_7_995">
-                                                <rect
-                                                    width="26"
-                                                    height="26"
-                                                    fill="white"
-                                                    transform="translate(0 0.838745)"
-                                                />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/" className="group">
-                                    <svg
-                                        width="26"
-                                        height="28"
-                                        viewBox="0 0 26 28"
-                                        fill="#fff"
-                                        className="group-hover:fill-ElectricAqua"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <g clipPath="url(#clip0_7_997)">
-                                            <path d="M24.1249 0H1.87514C0.839478 0 0 0.893637 0 1.99611V25.6813C0 26.7838 0.839478 27.6774 1.87514 27.6774H24.1249C25.1605 27.6774 26 26.7838 26 25.6813V1.99611C26 0.893637 25.1605 0 24.1249 0ZM9.22235 20.9202H6.05626V10.7805H9.22235V20.9202ZM7.6394 9.39586H7.61877C6.55634 9.39586 5.8692 8.61731 5.8692 7.64427C5.8692 6.64928 6.57736 5.89226 7.66043 5.89226C8.7435 5.89226 9.41 6.64928 9.43063 7.64427C9.43063 8.61731 8.7435 9.39586 7.6394 9.39586ZM20.6386 20.9202H17.4729V15.4957C17.4729 14.1324 17.0145 13.2027 15.8689 13.2027C14.9944 13.2027 14.4734 13.8298 14.2445 14.4352C14.1608 14.6519 14.1404 14.9547 14.1404 15.2577V20.9202H10.9745C10.9745 20.9202 11.016 11.7317 10.9745 10.7805H14.1404V12.2161C14.5611 11.5252 15.3139 10.5425 16.9937 10.5425C19.0767 10.5425 20.6386 11.9917 20.6386 15.1061V20.9202Z" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_7_997">
-                                                <rect width="26" height="27.6774" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </Link>
-                            </li>
-                        </ul>
+        <footer className="bg-gray-900 dark:bg-gray-950">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                {/* Main Footer Content */}
+                <div className="py-12 lg:py-16">
+                    <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
+                        
+                        {/* Logo and Description */}
+                        <div className="lg:col-span-4">
+                            <Link href="/" className="inline-block mb-6">
+                                <div className="relative w-40 h-12">
+                                    <Image
+                                        src="/images/logo/logo.png"
+                                        alt="Charity Logo"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                            </Link>
+                            <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+                                Restoring dignity and providing essential support for children in need. 
+                                We believe every child deserves a fair chance at life.
+                            </p>
+                        </div>
+
+                        {/* Navigation Links */}
+                        <div className="lg:col-span-8">
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                                <div>
+                                    <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+                                        Quick Links
+                                    </h3>
+                                    <ul className="space-y-3">
+                                        {headerData.slice(0, 2).map((item) => (
+                                            <li key={item.label}>
+                                                <Link 
+                                                    href={item.href}
+                                                    className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
+                                                >
+                                                    {item.label}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+                                        About
+                                    </h3>
+                                    <ul className="space-y-3">
+                                        {headerData.slice(2).map((item) => (
+                                            <li key={item.label}>
+                                                <Link 
+                                                    href={item.href}
+                                                    className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
+                                                >
+                                                    {item.label}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+                                        Support
+                                    </h3>
+                                    <ul className="space-y-3">
+                                        <li>
+                                            <Link 
+                                                href="/donate"
+                                                className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
+                                            >
+                                                Donate Now
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link 
+                                                href="/volunteer"
+                                                className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
+                                            >
+                                                Volunteer
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link 
+                                                href="/partners"
+                                                className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
+                                            >
+                                                Become a Partner
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
+                                        Contact
+                                    </h3>
+                                    <ul className="space-y-3">
+                                        <li>
+                                            <Link 
+                                                href="/contact"
+                                                className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
+                                            >
+                                                Contact Us
+                                            </Link>
+                                        </li>
+                                        <li className="text-gray-400 text-sm">
+                                            <span className="block">info@elpiscomm.com</span>
+                                            <span className="block">+44 7377 552170</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div className="grid md:grid-cols-12 grid-cols-1 items-center py-8">
-                    <div className="col-span-5">
-                        <p className="text-base font-normal text-PaleCerulean">
-                            © All rights reserved. Made by{" "}
-                            <Link
-                                href="https://nextjs-templates.com/"
-                                className="hover:text-white"
-                                target="_blank"
-                            >
-                                NextJs Templates
-                            </Link>
-                        </p>
-                        <p className="text-base font-normal text-PaleCerulean">
-                            Distributed by {" "}
-                            <Link
-                                href="https://themewagon.com/"
-                                className="hover:text-white"
-                                target="_blank"
-                            >
-                                ThemeWagon
-                            </Link>
-                        </p>
-                    </div>
-                    <div className="col-span-7 grid md:grid-cols-12 grid-cols-1 items-center gap-6">
-                        <p className="text-xl text-PaleCerulean font-normal col-span-4">
-                            Subscribe Newsletter
-                        </p>
-                        <div className="w-full col-span-8">
-                            <form className="newsletter-form bg-white dark:bg-transparent flex rounded-md justify-end overflow-hidden rounded-tl-lg rounded-bl-lg">
-                                <input
-                                    type="email"
-                                    placeholder="Email address*"
-                                    className="p-4 text-base border-0 rounded-md outline-0 w-[calc(100%_-_137px)] flex dark:bg-midnight_text dark:text-white dark:rounded-none dark:w-full dark:bg-darkmode"
-                                />
-                                <button
-                                    type="submit"
-                                    className="btn btn-1 hover-filled-slide-down bg-RegalBlue"
+
+                {/* Divider */}
+                <div className="border-t border-gray-800 dark:border-gray-700"></div>
+
+                {/* Bottom Bar */}
+                <div className="py-6">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                        {/* Copyright */}
+                        <div className="text-center md:text-left">
+                            <p className="text-gray-500 text-sm">
+                                © {new Date().getFullYear()} Elpis Community Group. All rights reserved.
+                            </p>
+                            <p className="text-gray-500 text-sm mt-1">
+                                Powered by{" "}
+                                <a 
+                                    href="https://periwin.com" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 transition-colors duration-200"
                                 >
-                                    <span className="!border-0 !text-white">Subscribe</span>
-                                </button>
-                            </form>
+                                    periwin.com
+                                </a>
+                            </p>
+                        </div>
+
+                        {/* Social Links */}
+                        <div className="flex items-center gap-4">
+                            <Link 
+                                href="https://facebook.com" 
+                                target="_blank"
+                                className="text-gray-400 hover:text-white transition-colors duration-200"
+                                aria-label="Facebook"
+                            >
+                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </Link>
+                            
+                            <Link 
+                                href="https://twitter.com" 
+                                target="_blank"
+                                className="text-gray-400 hover:text-white transition-colors duration-200"
+                                aria-label="Twitter"
+                            >
+                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.213c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                                </svg>
+                            </Link>
+                            
+                            <Link 
+                                href="https://linkedin.com" 
+                                target="_blank"
+                                className="text-gray-400 hover:text-white transition-colors duration-200"
+                                aria-label="LinkedIn"
+                            >
+                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </Link>
+                            
+                            <Link 
+                                href="https://instagram.com" 
+                                target="_blank"
+                                className="text-gray-400 hover:text-white transition-colors duration-200"
+                                aria-label="Instagram"
+                            >
+                                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </Link>
                         </div>
                     </div>
                 </div>

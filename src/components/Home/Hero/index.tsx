@@ -62,7 +62,7 @@ const Hero = () => {
                 data-aos-duration="1000"
               >
                 <Link
-                  href="/donate"
+                  href="https://www.zeffy.com/en-GB/donation-form/donate-to-change-lives-5915"
                   className="group inline-flex items-center gap-3 px-6 py-3 bg-blue-600 hover:bg-blue-700 
                     dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold rounded-lg 
                     transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"

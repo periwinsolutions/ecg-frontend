@@ -140,7 +140,7 @@ const EventTicket = () => {
                 </div>
                 
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-3">
-                  Choose a donation amount
+                  Donate Us
                 </h2>
                 
                 <p className="text-gray-600 dark:text-gray-400">
@@ -149,105 +149,15 @@ const EventTicket = () => {
               </div>
 
               {/* Donation Amounts */}
-              <fieldset className="mb-8">
-                <legend className="sr-only">
-                  Select a donation amount
-                </legend>
-                
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-6">
-                  {DONATION_AMOUNTS.map(({ value, label }) => (
-                    <button
-                      key={value}
-                      type="button"
-                      {...getAmountButtonProps(value)}
-                      className={`
-                        relative px-4 py-3 rounded-lg border-2 font-semibold text-gray-800 dark:text-gray-200
-                        transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
-                        ${selectedAmount === value
-                          ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400'
-                          : 'border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500'
-                        }
-                      `}
-                    >
-                      {label}
-                      {selectedAmount === value && (
-                        <span 
-                          className="absolute -top-2 -right-2 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center"
-                          aria-hidden="true"
-                        >
-                          <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                          </svg>
-                        </span>
-                      )}
-                    </button>
-                  ))}
-                </div>
-
-                {/* Custom Amount */}
-                <div className="relative">
-                  <label htmlFor="custom-amount" className="sr-only">
-                    Enter custom donation amount
-                  </label>
-                  <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500 font-medium">
-                    £
-                  </div>
-                  <input
-                    id="custom-amount"
-                    type="text"
-                    inputMode="decimal"
-                    value={customAmount}
-                    onChange={handleCustomAmountChange}
-                    onBlur={handleCustomAmountBlur}
-                    placeholder="Enter custom amount"
-                    aria-label="Custom donation amount in pounds"
-                    className="w-full pl-10 pr-4 py-3 text-lg rounded-lg border border-gray-300 dark:border-gray-600
-                      dark:bg-gray-700 dark:text-white placeholder-gray-400 dark:placeholder-gray-500
-                      focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                  />
-                </div>
-              </fieldset>
+             
 
               {/* Impact Preview */}
-              <div 
-                className="mb-8 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600"
-                role="status"
-                aria-live="polite"
-              >
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-                  <div className="flex items-center gap-3">
-                    <div 
-                      className="w-10 h-10 bg-white dark:bg-gray-600 rounded-lg flex items-center justify-center"
-                      aria-hidden="true"
-                    >
-                      <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900 dark:text-white text-sm">
-                        Your impact
-                      </p>
-                      <p className="text-gray-600 dark:text-gray-400 text-sm">
-                        {impactMessage}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-xl font-bold text-blue-600 dark:text-blue-400">
-                      £{impactAmount || 0}
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-400 text-xs">
-                      Donation amount
-                    </p>
-                  </div>
-                </div>
-              </div>
+
 
               {/* Donate Button */}
               <div className="mb-6">
                 <Link
-                  href={`/donate?amount=${impactAmount}`}
+                  href="https://www.zeffy.com/en-GB/donation-form/donate-to-change-lives-5915"
                   className="group flex items-center justify-center w-full px-6 py-3 bg-blue-600 
                     hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold 
                     rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 
