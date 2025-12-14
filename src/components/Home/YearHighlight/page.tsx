@@ -54,9 +54,7 @@ const MISSION_ITEMS: MissionItem[] = [
   },
 ];
 
-const STATS = [
-  
-];
+
 
 const Highlight = () => {
   return (
@@ -136,24 +134,6 @@ const Highlight = () => {
                 ))}
               </ul>
 
-              {/* Stats */}
-              <div 
-                className="pt-8 border-t border-gray-200 dark:border-gray-700"
-                aria-label="Our impact statistics"
-              >
-                <div className="grid grid-cols-2 gap-6">
-                  {STATS.map((stat, index) => (
-                    <div key={index} className="text-center">
-                      <p className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">
-                        {stat.value}
-                      </p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
-                        {stat.label}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
 

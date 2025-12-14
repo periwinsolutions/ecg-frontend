@@ -198,24 +198,20 @@ const Header: React.FC = () => {
             ))}
             <div className="mt-4 flex flex-col space-y-4 w-full">
               <Link
-                href="#"
+                href="/contact"
+                target="_blank"
                 className="bg-transparent border border-solid border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white"
-                onClick={() => {
-                  setIsSignInOpen(true);
-                  setNavbarOpen(false);
-                }}
+              
               >
-                Sign In
+                Contact Us
               </Link>
               <Link
-                href="#"
+                href="https://www.zeffy.com/en-GB/donation-form/donate-to-change-lives-5915"
+                target="_blank"
                 className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-                onClick={() => {
-                  setIsSignUpOpen(true);
-                  setNavbarOpen(false);
-                }}
+           
               >
-                Sign Up
+                Donate Us
               </Link>
             </div>
           </nav>
