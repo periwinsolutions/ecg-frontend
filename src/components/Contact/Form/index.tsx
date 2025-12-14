@@ -110,10 +110,10 @@ const ContactForm = () => {
               <header className="mb-10">
                 <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-blue-100 dark:bg-blue-900/30 rounded-full">
                   <span 
-                    className="inline-block w-1.5 h-1.5 bg-blue-600 dark:bg-blue-400 rounded-full"
+                    className="inline-block w-1.5 h-1.5 bg-primary dark:bg-blue-400 rounded-full"
                     aria-hidden="true"
                   />
-                  <span className="text-xs font-medium text-blue-700 dark:text-blue-300 uppercase tracking-wider">
+                  <span className="text-xs font-medium text-primary dark:text-blue-300 uppercase tracking-wider">
                     Contact Us
                   </span>
                 </div>
@@ -290,8 +290,8 @@ const ContactForm = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 
-                      hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold 
+                    className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-primary 
+                      hover:bg-secondary dark:bg-primary dark:hover:bg-primary text-white font-semibold 
                       rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 
                       focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-70 disabled:cursor-not-allowed"
                   >

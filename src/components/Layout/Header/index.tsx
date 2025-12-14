@@ -199,7 +199,7 @@ const Header: React.FC = () => {
             <div className="mt-4 flex flex-col space-y-4 w-full">
               <Link
                 href="#"
-                className="bg-transparent border border-solid border-primary text-primary px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white"
+                className="bg-transparent border border-solid border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white"
                 onClick={() => {
                   setIsSignInOpen(true);
                   setNavbarOpen(false);

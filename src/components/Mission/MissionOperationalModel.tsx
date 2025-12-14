@@ -53,19 +53,19 @@ const MissionOperationalModel = () => {
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-blue-100 dark:bg-blue-900/30 rounded-full">
+          <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-primary dark:bg-blue-900/30 rounded-full">
             <span 
-              className="inline-block w-1.5 h-1.5 bg-blue-600 dark:bg-blue-400 rounded-full"
+              className="inline-block w-1.5 h-1.5 bg-white dark:bg-blue-400 rounded-full"
               aria-hidden="true"
             />
-            <span className="text-xs font-medium text-blue-700 dark:text-blue-300 uppercase tracking-wider">
+            <span className="text-xs font-medium text-white dark:text-blue-300 uppercase tracking-wider">
               Our Approach
             </span>
           </div>
 
           {/* Heading */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
-            The Operational Model: Our <span className="text-blue-600 dark:text-blue-400">'How'</span>
+            The Operational Model: Our <span className="text-primary">'How'</span>
           </h2>
           
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">

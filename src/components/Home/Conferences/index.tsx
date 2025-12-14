@@ -56,12 +56,12 @@ const Conferences = () => {
           >
             <div className="max-w-2xl">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-blue-100 dark:bg-blue-900/30 rounded-full">
+              <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-primary dark:bg-blue-900/30 rounded-full">
                 <span 
-                  className="inline-block w-1.5 h-1.5 bg-blue-600 dark:bg-blue-400 rounded-full"
+                  className="inline-block w-1.5 h-1.5 bg-white  text-white dark:bg-blue-400 rounded-full"
                   aria-hidden="true"
                 />
-                <span className="text-xs font-medium text-blue-700 dark:text-blue-300 uppercase tracking-wider">
+                <span className="text-xs text-white font-medium uppercase tracking-wider">
                   Our Story
                 </span>
               </div>
@@ -105,9 +105,9 @@ const Conferences = () => {
               >
                 <Link
                   href="/mission"
-                  className="inline-flex items-center gap-2 px-6 py-3 border-2 border-blue-600 
-                    text-blue-600 dark:text-blue-400 dark:border-blue-400 font-semibold rounded-lg
-                    hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors duration-200
+                  className="inline-flex items-center gap-2 px-6 py-3 border-2 text-primary 
+                    text-blue-600  font-semibold rounded-lg
+                    hover:text-primary  transition-colors duration-200
                     focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                   aria-label="Learn more about our mission"
                 >

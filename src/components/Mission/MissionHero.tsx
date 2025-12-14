@@ -12,17 +12,17 @@ const MissionHero = () => {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 mb-6 px-3 py-1 bg-blue-100 dark:bg-blue-900/30 rounded-full">
                 <span 
-                  className="inline-block w-1.5 h-1.5 bg-blue-600 dark:bg-blue-400 rounded-full"
+                  className="inline-block w-1.5 h-1.5 bg-primary dark:bg-blue-400 rounded-full"
                   aria-hidden="true"
                 />
-                <span className="text-xs font-medium text-blue-700 dark:text-blue-300 uppercase tracking-wider">
+                <span className="text-xs font-medium text-primary dark:text-blue-300 uppercase tracking-wider">
                   Our Mission
                 </span>
               </div>
 
               {/* Main Heading */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                A Mission Born of <span className="text-blue-600 dark:text-blue-400">Witness</span>
+                A Mission Born of <span className="text-primary">Witness</span>
               </h1>
 
               {/* Subheading */}

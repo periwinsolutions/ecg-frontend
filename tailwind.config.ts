@@ -80,8 +80,8 @@ const config: Config = {
         '3': '3',
       },      
       colors: {
-        primary: "#2F73F2",
-        secondary: "#102C46",
+        primary: "#2596be",
+        secondary: "#157092ff",
         SereneSky: "#8FACC6",
         ElectricAqua: "#46C4FF",
         RegalBlue: "#13439B",

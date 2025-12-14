@@ -84,13 +84,13 @@ const EventTicket = () => {
         <header className="text-center mb-12 lg:mb-16">
           <div 
             role="status"
-            className="inline-flex items-center gap-2 mb-3 px-3 py-1 bg-blue-100 dark:bg-blue-900/30 rounded-full"
+            className="inline-flex items-center gap-2 mb-3 px-3 py-1 bg-primary dark:bg-blue-900/30 rounded-full"
           >
             <span 
-              className="inline-block w-1.5 h-1.5 bg-blue-600 dark:bg-blue-400 rounded-full"
+              className="inline-block w-1.5 h-1.5 bg-white dark:bg-blue-400 rounded-full"
               aria-hidden="true"
             />
-            <span className="text-xs font-medium text-blue-700 dark:text-blue-300 uppercase tracking-wider">
+            <span className="text-xs font-medium text-white dark:text-blue-300 uppercase tracking-wider">
               Make a Difference
             </span>
           </div>
@@ -120,7 +120,7 @@ const EventTicket = () => {
               {/* Card Header */}
               <div className="text-center mb-8">
                 <div 
-                  className="inline-flex items-center justify-center w-12 h-12 bg-blue-50 dark:bg-blue-900/20 rounded-full mb-4"
+                  className="inline-flex items-center justify-center w-12 h-12 text-primary dark:bg-blue-900/20 rounded-full mb-4"
                   aria-hidden="true"
                 >
                   <svg 
@@ -158,8 +158,8 @@ const EventTicket = () => {
               <div className="mb-6">
                 <Link
                   href="https://www.zeffy.com/en-GB/donation-form/donate-to-change-lives-5915"
-                  className="group flex items-center justify-center w-full px-6 py-3 bg-blue-600 
-                    hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold 
+                  className="group flex items-center justify-center w-full px-6 py-3 bg-primary 
+                    hover:bg-secondary dark:bg-primary dark:hover:bg-primary text-white font-semibold 
                     rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 
                     focus:ring-blue-500 focus:ring-offset-2"
                   target="_blank"

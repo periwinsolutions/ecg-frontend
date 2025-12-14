@@ -55,8 +55,7 @@ const MISSION_ITEMS: MissionItem[] = [
 ];
 
 const STATS = [
-  { value: "500+", label: "Children Supported" },
-  { value: "25+", label: "Communities Reached" },
+  
 ];
 
 const Highlight = () => {
@@ -75,10 +74,10 @@ const Highlight = () => {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-blue-100 dark:bg-blue-900/30 rounded-full">
                 <span 
-                  className="inline-block w-1.5 h-1.5 bg-blue-600 dark:bg-blue-400 rounded-full"
+                  className="inline-block w-1.5 h-1.5 bg-primary dark:bg-blue-400 rounded-full"
                   aria-hidden="true"
                 />
-                <span className="text-xs font-medium text-blue-700 dark:text-blue-300 uppercase tracking-wider">
+                <span className="text-xs font-medium text-primary dark:text-blue-300 uppercase tracking-wider">
                   Our Mission
                 </span>
               </div>
@@ -115,7 +114,7 @@ const Highlight = () => {
                       hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors duration-200"
                     >
                       <div 
-                        className="flex-shrink-0 w-10 h-10 bg-blue-50 dark:bg-blue-900/20 rounded-lg 
+                        className="flex-shrink-0 w-10 h-10 text-primary dark:bg-blue-900/20 rounded-lg 
                           flex items-center justify-center group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30
                           transition-colors duration-200"
                         aria-hidden="true"
@@ -189,7 +188,7 @@ const Highlight = () => {
               >
                 <div className="flex items-center gap-3">
                   <div 
-                    className="w-10 h-10 bg-blue-600 dark:bg-blue-500 rounded-lg flex items-center justify-center"
+                    className="w-10 h-10 bg-primary dark:bg-primary rounded-lg flex items-center justify-center"
                     aria-hidden="true"
                   >
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

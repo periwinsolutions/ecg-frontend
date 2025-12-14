@@ -4,12 +4,12 @@ const MissionVision = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="text-center mb-12 lg:mb-16">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-blue-100 dark:bg-blue-900/30 rounded-full">
+          <div className="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-primary dark:bg-blue-900/30 rounded-full">
             <span 
-              className="inline-block w-1.5 h-1.5 bg-blue-600 dark:bg-blue-400 rounded-full"
+              className="inline-block w-1.5 h-1.5 bg-white dark:bg-blue-400 rounded-full"
               aria-hidden="true"
             />
-            <span className="text-xs font-medium text-blue-700 dark:text-blue-300 uppercase tracking-wider">
+            <span className="text-xs font-medium text-white dark:text-blue-300 uppercase tracking-wider">
               Our Purpose
             </span>
           </div>
@@ -23,9 +23,9 @@ const MissionVision = () => {
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           
           {/* Mission Card */}
-          <div className="bg-blue-50 dark:bg-blue-900/10 rounded-2xl p-8 border border-blue-100 dark:border-blue-800">
+          <div className="text-primary dark:bg-blue-900/10 rounded-2xl p-8 border border-blue-100 dark:border-blue-800">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-blue-600 dark:bg-blue-500 rounded-xl flex items-center justify-center">
+              <div className="w-12 h-12 bg-primary dark:bg-primary rounded-xl flex items-center justify-center">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>

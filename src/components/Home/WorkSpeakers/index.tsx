@@ -87,7 +87,7 @@ const ProblemWeSolve = () => {
                   <div className="flex-shrink-0 w-10 h-10 bg-blue-100 dark:bg-blue-900/50 rounded-lg flex items-center justify-center group-hover:bg-blue-200 dark:group-hover:bg-blue-800/70 transition-colors duration-300">
                     <span className="text-blue-600 dark:text-blue-300 font-bold">1</span>
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white">
+                  <h4 className="text-xl font-bold text-gray-900">
                     Missed education
                   </h4>
                 </div>
@@ -97,7 +97,7 @@ const ProblemWeSolve = () => {
                   begun.
                 </p>
                 <div className="mt-6 pt-4 border-t border-gray-300/30 dark:border-gray-600/30">
-                  <div className="w-0 group-hover:w-full h-0.5 bg-blue-500 transition-all duration-300"></div>
+                  <div className="w-0 group-hover:w-full h-0.5 bg-primary transition-all duration-300"></div>
                 </div>
               </div>
 
@@ -121,7 +121,7 @@ const ProblemWeSolve = () => {
                   their control.
                 </p>
                 <div className="mt-6 pt-4 border-t border-gray-300/30 dark:border-gray-600/30">
-                  <div className="w-0 group-hover:w-full h-0.5 bg-blue-500 transition-all duration-300"></div>
+                  <div className="w-0 group-hover:w-full h-0.5 bg-primary transition-all duration-300"></div>
                 </div>
               </div>
 
@@ -144,7 +144,7 @@ const ProblemWeSolve = () => {
                   stability, and the ability to focus and learn.
                 </p>
                 <div className="mt-6 pt-4 border-t border-gray-300/30 dark:border-gray-600/30">
-                  <div className="w-0 group-hover:w-full h-0.5 bg-blue-500 transition-all duration-300"></div>
+                  <div className="w-0 group-hover:w-full h-0.5 bg-primary transition-all duration-300"></div>
                 </div>
               </div>
 
@@ -167,7 +167,7 @@ const ProblemWeSolve = () => {
                   struggle to catch up, reinforcing the cycle of disadvantage.
                 </p>
                 <div className="mt-6 pt-4 border-t border-gray-300/30 dark:border-gray-600/30">
-                  <div className="w-0 group-hover:w-full h-0.5 bg-blue-500 transition-all duration-300"></div>
+                  <div className="w-0 group-hover:w-full h-0.5 bg-primary transition-all duration-300"></div>
                 </div>
               </div>
             </div>
