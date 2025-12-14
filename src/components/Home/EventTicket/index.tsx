@@ -162,6 +162,7 @@ const EventTicket = () => {
                     hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold 
                     rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 
                     focus:ring-blue-500 focus:ring-offset-2"
+                  target="_blank"
                 >
                   <span className="flex items-center gap-2">
                     Donate now

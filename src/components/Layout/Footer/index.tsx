@@ -75,15 +75,16 @@ const Footer: FC = () => {
                                     <ul className="space-y-3">
                                         <li>
                                             <Link 
-                                                href="/donate"
+                                                href="https://www.zeffy.com/en-GB/donation-form/donate-to-change-lives-5915"
                                                 className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
+                                                target="_blank"
                                             >
                                                 Donate Now
                                             </Link>
                                         </li>
                                         <li>
                                             <Link 
-                                                href="/volunteer"
+                                                href="/contact"
                                                 className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
                                             >
                                                 Volunteer
@@ -91,7 +92,7 @@ const Footer: FC = () => {
                                         </li>
                                         <li>
                                             <Link 
-                                                href="/partners"
+                                                href="/contact"
                                                 className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
                                             >
                                                 Become a Partner

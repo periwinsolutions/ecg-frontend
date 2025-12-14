@@ -88,11 +88,9 @@ const Header: React.FC = () => {
             <div className="flex items-center space-x-4">
     
               <Link
-                href="#"
+                href="/contact"
                 className="hidden lg:block btn_outline btn-2 hover-outline-slide-down rounded-lg"
-                onClick={() => {
-                  setIsSignInOpen(true);
-                }}
+              
               >
                 <span className="!py-2 !px-4">Contact Us</span>
               </Link>
@@ -103,7 +101,7 @@ const Header: React.FC = () => {
                 >
                   <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-lg bg-white px-8 py-14 text-center dark:bg-darklight">
                     <button
-                      onClick={() => setIsSignInOpen(false)}
+                     
                       className=" hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-full absolute -top-5 -right-3 mr-8 mt-8"
                       aria-label="Close Sign In Modal"
                     >
@@ -112,18 +110,15 @@ const Header: React.FC = () => {
                         className="text-2xl dark:text-white"
                       />
                     </button>
-                    <Signin
-                      signInOpen={(value: boolean) => setIsSignInOpen(value)}
-                    />
+                  
                   </div>
                 </div>
               )}
               <Link
                 href="https://www.zeffy.com/en-GB/donation-form/donate-to-change-lives-5915"
                 className="hidden lg:block btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden"
-                onClick={() => {
-                  setIsSignUpOpen(true);
-                }}
+                target="_blank"
+               
               >
                 <span className="!py-2 !px-4">Donate Us</span>
               </Link>
