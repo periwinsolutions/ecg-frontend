@@ -31,7 +31,7 @@ const MissionCTA = () => {
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              href="https://www.zeffy.com/en-GB/donation-form/donate-to-change-lives-5915"
+              href="https://donate.stripe.com/4gM9AUaV7bC6bFK8G90kE00"
               className="group inline-flex items-center gap-3 px-8 py-4 bg-primary hover:bg-secondary
                 text-white font-semibold rounded-lg 
                 transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none 

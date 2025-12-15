@@ -115,7 +115,7 @@ const Header: React.FC = () => {
                 </div>
               )}
               <Link
-                href="https://www.zeffy.com/en-GB/donation-form/donate-to-change-lives-5915"
+                href="https://donate.stripe.com/4gM9AUaV7bC6bFK8G90kE00"
                 className="hidden lg:block btn btn-1 hover-filled-slide-down rounded-lg overflow-hidden"
                 target="_blank"
                
@@ -206,7 +206,7 @@ const Header: React.FC = () => {
                 Contact Us
               </Link>
               <Link
-                href="https://www.zeffy.com/en-GB/donation-form/donate-to-change-lives-5915"
+                href="https://donate.stripe.com/4gM9AUaV7bC6bFK8G90kE00"
                 target="_blank"
                 className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700"
            

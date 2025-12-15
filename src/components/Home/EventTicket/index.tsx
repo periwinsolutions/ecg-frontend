@@ -157,7 +157,7 @@ const EventTicket = () => {
               {/* Donate Button */}
               <div className="mb-6">
                 <Link
-                  href="https://www.zeffy.com/en-GB/donation-form/donate-to-change-lives-5915"
+                  href="https://donate.stripe.com/4gM9AUaV7bC6bFK8G90kE00"
                   className="group flex items-center justify-center w-full px-6 py-3 bg-primary 
                     hover:bg-secondary dark:bg-primary dark:hover:bg-primary text-white font-semibold 
                     rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 

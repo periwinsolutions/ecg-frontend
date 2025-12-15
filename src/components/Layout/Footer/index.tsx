@@ -75,7 +75,7 @@ const Footer: FC = () => {
                                     <ul className="space-y-3">
                                         <li>
                                             <Link 
-                                                href="https://www.zeffy.com/en-GB/donation-form/donate-to-change-lives-5915"
+                                                href="https://donate.stripe.com/4gM9AUaV7bC6bFK8G90kE00"
                                                 className="text-gray-400 hover:text-white text-sm transition-colors duration-200"
                                                 target="_blank"
                                             >
